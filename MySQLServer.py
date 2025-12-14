@@ -7,6 +7,10 @@ Intro_to_DB = mysql.connector.connect(
     database = "alx_book_store"
 )
 
+try:
+    pass
+except mysql.connector.Error:
+    pass
 print(Intro_to_DB.server_info)
 
 mycursor = Intro_to_DB.cursor()
